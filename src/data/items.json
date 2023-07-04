@@ -1,0 +1,32 @@
+[
+    {
+    "id": 1,
+    "name": "Crusader Helmet",
+    "price": 499,
+    "imgUrl":"/imgs/Crusader.jpg"
+    },
+    {
+        "id": 2,
+        "name": "European Knight Helmet",
+        "price": 699,
+        "imgUrl":"/imgs/European Knight.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Helm of Sauron",
+        "price": 1499,
+        "imgUrl":"/imgs/Helm Of Sauron.jpg"
+    }, 
+    {
+        "id": 4,
+        "name": "Roman Helmet",
+        "price": 599,
+        "imgUrl":"/imgs/Roman Helmet.jpg"
+    }, 
+    {
+        "id": 5,
+        "name": "Spartan Helmet",
+        "price": 399,
+        "imgUrl":"/imgs/Roman Helmet.jpg"
+    }
+]
