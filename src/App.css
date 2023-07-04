@@ -21,8 +21,36 @@ body{
 
 .cart{
     margin-left: auto;
+    background-color: transparent;
+    border: 1px solid gray;
+    border-radius: 20%;
+    position: relative;
 }
 
 .cart img{
-    width: 50px;
+    width: 50px;   
+}
+
+.cart .cartNumber{
+    margin-left: auto;
+    margin-right: auto;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: white;
+    border: 1px solid rgb(170, 23, 23);
+    background-color: rgb(170, 23, 23);
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translate(25%, 25%);
+    
+   
+
 }

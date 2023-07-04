@@ -6,7 +6,10 @@ export function Navbar(){
             <NavLink to="/">Home</NavLink>
             <NavLink to="/Store">Store</NavLink>
             <NavLink to="/About">About</NavLink>
-            <div className="cart"><img src="./src/assets/cart.png" alt="" /></div>
+            <button className="cart">
+                <img src="./src/assets/cart.png" alt="cart" />
+                <div className="cartNumber">3</div>
+            </button>
            
         </div>
     )    
