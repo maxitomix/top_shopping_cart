@@ -17,6 +17,9 @@ body{
 
     background-color:gainsboro;
     box-shadow: 0px 2px 3px 3px gray;
+
+    position: sticky;
+	top: 0;
 }
 
 .cart{
@@ -25,9 +28,21 @@ body{
     border: 1px solid gray;
     border-radius: 20%;
     position: relative;
+    transition: background-color .5s ease-out;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.cart:hover{
+    background-color: aliceblue;
 }
 
 .cart img{
+    padding-top: 3px;
+    padding-right: 3px;
     width: 50px;   
 }
 
