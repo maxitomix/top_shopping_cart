@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+    
+}
+
+body{
+    background-color: rgb(189, 195, 201);
+}
+
+.navbar{
+    display: flex;
+    margin: 1rem;
+    padding: 1rem;
+    gap: 1rem;
+
+    align-items: center;
+
+    background-color:gainsboro;
+    box-shadow: 0px 2px 3px 3px gray;
+}
+
+.cart{
+    margin-left: auto;
+}
+
+.cart img{
+    width: 50px;
+}
