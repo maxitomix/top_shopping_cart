@@ -1,4 +1,6 @@
+import { StoreItem } from "../components/StoreItem"
 import storeItems from "../data/items.json"
+
 
 export function Store(){
     return(
@@ -6,7 +8,10 @@ export function Store(){
         <h1>Store</h1>
         <div className="storeContainer">
             {storeItems.map(item => (
-                <div className="item">{JSON.stringify(item)}</div>
+                <div key={item.id} className="item">
+                    {/* {JSON.stringify(item)}  */}
+                <StoreItem {...item}/>
+                </div>
             ))
             }
         </div>

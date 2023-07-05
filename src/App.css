@@ -9,7 +9,7 @@ body{
 
 .navbar{
     display: flex;
-    margin: 1rem;
+
     padding: 1rem;
     gap: 1rem;
 
@@ -65,7 +65,34 @@ body{
     bottom: 0;
     right: 0;
     transform: translate(25%, 25%);
-    
-   
+}
 
+.storeContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+
+.card{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: gainsboro;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius:1rem;
+    box-shadow: 0 0 5px 5px rgb(99, 99, 99);
+    
+    .cardImg{
+        height: 350px;
+        width: 350px;
+        object-fit:scale-down;
+        background-color: white;
+        border-radius: 1rem;
+        /* padding: 1rem; */
+        margin: 1rem;
+        box-shadow: 0 0 5px 3px rgb(50, 50, 50);
+    }
 }
