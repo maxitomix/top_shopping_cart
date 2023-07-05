@@ -95,4 +95,37 @@ body{
         margin: 1rem;
         box-shadow: 0 0 5px 3px rgb(50, 50, 50);
     }
+
+    .row1{
+        padding: 0 2rem;
+        width: 100%;
+        display: flex;
+    }
+
+    .price{
+        margin-left: auto;
+        font-weight: bold;
+        padding: .5rem;
+        color: rgb(125, 127, 128);
+
+    }
+
+
+    .cartControls{
+        width: 100%
+    }
+
+    .btnAddToCart{
+        display: block;
+        width: 90%;
+        background-color: rgb(74, 74, 236);
+        color: aliceblue;
+        border: transparent;
+        border-radius: 5px;
+        padding: .5rem;
+    
+
+    }
+
+
 }
