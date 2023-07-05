@@ -10,7 +10,7 @@ type StoreItemsProps = {
 
 export function StoreItem ({id, name, price, imgUrl}:StoreItemsProps){
 
-    const quantity = 0
+    const quantity = 1
 
     return(
     <div className="card">
@@ -22,7 +22,16 @@ export function StoreItem ({id, name, price, imgUrl}:StoreItemsProps){
       
         {quantity === 0 ? (
             <button className="btnAddToCart"> + Add to Cart</button>
-        ) : null}
+        ) : <div className="cartControls">
+                <div className="row1">
+                    <button className="btnQuantity">-</button>
+                    <div className="displayQuantity"><span className="quantity">{quantity}</span> in cart</div>
+                    <button className="btnQuantity">+</button>
+                </div>
+                    <div>
+                    <button className="btnRemove">Remove</button>
+                </div>
+             </div>}
 
     </div>
     )
