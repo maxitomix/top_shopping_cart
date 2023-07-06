@@ -1,23 +1,32 @@
-import {NavLink} from "react-router-dom"
+import { NavLink } from "react-router-dom"
 import { useShoppingCart } from "../context/ShoppingCartContext"
+import { Button, Container, Nav, Navbar as NavbarBs } from "react-bootstrap"
 
 export function Navbar(){
 
     const { openCart, cartQuantity} = useShoppingCart()
 
     return(
-        <div className="navbar">
-            <NavLink to="/">Home</NavLink>
-            <NavLink to="/Store">Store</NavLink>
-            <NavLink to="/About">About</NavLink>
-            <button className="cart" onClick={openCart}>
-                <img src="./src/assets/cart.png" alt="cart" />
-                {cartQuantity >0 &&(
-                    <div className="cartNumber">{cartQuantity}</div>
-                )}
-                
-            </button>
-           
-        </div>
+        <NavbarBs className="bg-white shadow-sm mb-3">
+            <Container>
+                <Nav className="me-auto">
+                    <Nav.Link to="/" as={NavLink} >Home</Nav.Link>
+                    <Nav.Link to="/Store" as={NavLink} >Store</Nav.Link>
+                    <Nav.Link to="/About" as={NavLink} >About</Nav.Link>     
+                </Nav>
+
+                <Button style={{width: "4rem", height: "4rem"}} 
+                        onClick={openCart}
+                        variant="outline-primary"
+                        className="d-flex justify-content-center"
+                        > 
+                        <img src="./src/assets/cart.png" alt="cart" width="45"/>
+                        {cartQuantity >0 &&(
+                            <div className="cartNumber">{cartQuantity}</div>
+                        )}
+                </Button>
+        </Container>
+        </NavbarBs>
+
     )    
 }

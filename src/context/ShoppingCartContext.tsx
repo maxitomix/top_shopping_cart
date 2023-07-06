@@ -1,4 +1,5 @@
 import {ReactNode, createContext, useContext, useState} from "react";
+import { ShoppingCart } from "../components/ShoppingCart";
 
 type ShoppingCartProviderProps = {
     children: ReactNode
@@ -90,9 +91,10 @@ function removeFromCart(id: number){
                 cartQuantity,
                 openCart,
                 closeCart
-                
+
                 }}>
                 {children}
+                {/* <ShoppingCart /> */}
         </shoppingCartContext.Provider>
     )
 }
