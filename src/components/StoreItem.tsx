@@ -1,3 +1,4 @@
+import { useShoppingCart } from "../context/ShoppingCartContext"
 import { formatCurrency } from "../utilities/formatCurrency"
 
 type StoreItemsProps = {
@@ -9,8 +10,14 @@ type StoreItemsProps = {
 
 
 export function StoreItem ({id, name, price, imgUrl}:StoreItemsProps){
+    const {
+        getItemQuantity, 
+        increaseCartQuantity, 
+        decreaseCartQuantity, 
+        removeFromCart 
+    } = useShoppingCart()
 
-    const quantity = 1
+    const quantity = getItemQuantity(id)
 
     return(
     <div className="card">
