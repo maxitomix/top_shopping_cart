@@ -20,4 +20,3 @@ export function Store(){
 }
 
 // 1 hour mark
-// https://www.youtube.com/watch?v=lATafp15HWA&ab_channel=WebDevSimplified

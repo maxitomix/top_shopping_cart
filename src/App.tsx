@@ -6,6 +6,7 @@ import {About} from "./pages/About"
 import {Navbar} from "./components/Navbar"
 import { ShoppingCartProvider } from "./context/ShoppingCartContext"
 import { Container } from "react-bootstrap"
+import './App2.css'
 
 function App() {
 
@@ -18,7 +19,7 @@ function App() {
               <Route path="/store" element={<Store />} ></Route>
               <Route path="/about" element={<About />} ></Route>
             </Routes>
-          </Container>
+        </Container>
     </ShoppingCartProvider>
   )
 }

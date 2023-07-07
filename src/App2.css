@@ -1,0 +1,18 @@
+.card img{
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
+
+.storeContainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-evenly
+}
+
+.card{
+    width: 300px;
+    height: 400px;
+    text-align: left;
+}

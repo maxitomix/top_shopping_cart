@@ -1,5 +1,6 @@
 import { useShoppingCart } from "../context/ShoppingCartContext"
 import { formatCurrency } from "../utilities/formatCurrency"
+import { Card } from "react-bootstrap"
 
 type StoreItemsProps = {
     id: number
@@ -20,12 +21,16 @@ export function StoreItem ({id, name, price, imgUrl}:StoreItemsProps){
     const quantity = getItemQuantity(id)
 
     return(
-    <div className="card">
-        <img className="cardImg" src={imgUrl} alt={name} />
-        <div className="row1">
-            <h2 className="itemName"> {name} </h2>
-            <p className="price">{formatCurrency(price)}</p>
-        </div>
+    <Card>
+        <Card.Body className="d-flex flex-column align-items-center">
+             <img src={imgUrl}  alt="product photo"  />
+            <Card.Title className="d-flex justify-content-space-between align-items-baseline mb-4" >
+
+            <span className="fs-2"> {name} </span>
+            <span className="ms-2 text-muted">{formatCurrency(price)}</span>
+
+            </Card.Title>
+
       
         {quantity === 0 ? (
             <div className="cartControls">
@@ -46,7 +51,8 @@ export function StoreItem ({id, name, price, imgUrl}:StoreItemsProps){
                 </div>
 
              </div>}
+             </Card.Body>
 
-    </div>
+    </Card>
     )
 }
