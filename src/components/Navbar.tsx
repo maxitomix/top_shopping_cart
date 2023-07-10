@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom"
 import { useShoppingCart } from "../context/ShoppingCartContext"
 import { Button, Container, Nav, Navbar as NavbarBs } from "react-bootstrap"
+import cartImg from '/assets/cart.png';
 
 export function Navbar(){
 
@@ -20,7 +21,7 @@ export function Navbar(){
                         variant="outline-primary"
                         className="d-flex justify-content-center cart"
                         > 
-                        <img src="./src/assets/cart.png" alt="cart" width="45"/>
+                        <img src={cartImg} alt="cart" width="45"/>
                         {cartQuantity >0 &&(
                             <div className="cartNumber">{cartQuantity}</div>
                         )}
