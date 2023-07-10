@@ -4,6 +4,7 @@
     object-fit: contain;
 }
 
+
 .storeContainer{
     display: flex;
     flex-wrap: wrap;
@@ -15,4 +16,91 @@
     width: 300px;
     height: 400px;
     text-align: left;
+}
+
+.row1{
+    display: flex;
+    gap: .25rem;
+    text-align: center;
+    justify-items: center;
+    vertical-align: middle;
+    align-items:center;
+    justify-content:center;
+}
+
+button{
+    padding: .25rem;
+    margin: .25rem;
+    border-radius: 25%;
+    border: transparent;
+    background-color:cornflowerblue;
+    color:aliceblue;
+    transition: all .3s;
+    padding: .5rem 1rem;
+    
+}
+
+.dsisplayQuantity{
+    text-align: center;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+.btnQuantity{
+    background-color:cornflowerblue;
+
+}
+
+.btnRemove{
+    background-color:rgb(185, 23, 23);
+
+}
+
+
+
+/* CSS */
+.button-71 {
+  background-color: #0078d0;
+  border: 0;
+  border-radius: 56px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: system-ui,-apple-system,system-ui,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  outline: 0;
+  padding: .5rem 1rem;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: all .3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-71:before {
+  background-color: initial;
+  background-image: linear-gradient(#fff 0, rgba(255, 255, 255, 0) 100%);
+  border-radius: 125px;
+  content: "";
+  height: 50%;
+  left: 4%;
+  opacity: .5;
+  position: absolute;
+  top: 0;
+  transition: all .3s;
+  width: 92%;
+}
+
+.button-71:hover {
+  box-shadow: rgba(255, 255, 255, .2) 0 3px 15px inset, rgba(0, 0, 0, .1) 0 3px 5px, rgba(0, 0, 0, .1) 0 10px 13px;
+  transform: scale(1.05);
+}
+
+@media (min-width: 768px) {
+  .button-71 {
+    padding: 16px 1.5rem;
+  }
 }
