@@ -9,19 +9,19 @@
         "id": 2,
         "name": "Knight Helmet",
         "price": 699,
-        "imgUrl":"/imgs/European Knight.jpg"
+        "imgUrl":"/imgs/EuropeanKnight.jpg"
     },
     {
         "id": 3,
         "name": "Helm of Sauron",
         "price": 1499,
-        "imgUrl":"/imgs/Helm Of Sauron.jpg"
+        "imgUrl":"/imgs/HelmSauron.jpg"
     }, 
     {
         "id": 4,
         "name": "Roman Helmet",
         "price": 599,
-        "imgUrl":"/imgs/Roman Helmet.jpg"
+        "imgUrl":"/imgs/RomanHelmet.jpg"
     }, 
     {
         "id": 5,
