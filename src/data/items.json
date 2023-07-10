@@ -3,30 +3,30 @@
     "id": 1,
     "name": "Crusader Helmet",
     "price": 499,
-    "imgUrl":"/imgs/Crusader.jpg"
+    "imgUrl":"/top_shopping_cart/imgs/Crusader.jpg"
     },
     {
         "id": 2,
         "name": "Knight Helmet",
         "price": 699,
-        "imgUrl":"/imgs/EuropeanKnight.jpg"
+        "imgUrl":"/top_shopping_cart/imgs/EuropeanKnight.jpg"
     },
     {
         "id": 3,
         "name": "Helm of Sauron",
         "price": 1499,
-        "imgUrl":"/imgs/HelmSauron.jpg"
+        "imgUrl":"/top_shopping_cart/imgs/HelmSauron.jpg"
     }, 
     {
         "id": 4,
         "name": "Roman Helmet",
         "price": 599,
-        "imgUrl":"/imgs/RomanHelmet.jpg"
+        "imgUrl":"/top_shopping_cart/imgs/RomanHelmet.jpg"
     }, 
     {
         "id": 5,
         "name": "Spartan Helmet",
         "price": 399,
-        "imgUrl":"/imgs/Spartan.jpg"
+        "imgUrl":"/top_shopping_cart/imgs/Spartan.jpg"
     }
 ]
