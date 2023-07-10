@@ -18,7 +18,7 @@ export function Navbar(){
                 <Button style={{width: "4rem", height: "4rem"}} 
                         onClick={openCart}
                         variant="outline-primary"
-                        className="d-flex justify-content-center"
+                        className="d-flex justify-content-center cart"
                         > 
                         <img src="./src/assets/cart.png" alt="cart" width="45"/>
                         {cartQuantity >0 &&(
