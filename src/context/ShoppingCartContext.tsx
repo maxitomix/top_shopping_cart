@@ -1,5 +1,5 @@
 import {ReactNode, createContext, useContext, useState} from "react";
-import { ShoppingCart } from "./ShoppingCart";
+import { ShoppingCart } from "../components/ShoppingCart"
 
 type ShoppingCartProviderProps = {
     children: ReactNode
